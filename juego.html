@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escape Room Flores</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+<style>
+    #pregunta2{
+        display:none;
+    }
+</style>
+</head>
+<body>
+    <header></header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <h1>Bienvenido al Escape Room del Barrio de Flores</h1>
+                <h2>¿Estas listo?</h2>
+            </div>
+            <hr>
+            <div class="row" id="pregunta1">
+                    <div class="col">
+                        <h3>*pregunta de ejemplo*</h3>
+                        <input type="text" placeholder="Ingrese su respuesta" id="respuesta1">
+                        <input type="button" onclick="enviar(1)"  value="Enviar respuesta">
+                        <h6>(Ingresar Hola para dar por correcta)</h6>
+                    </div>
+            </div>
+            <hr>
+
+            <div class="row" id="pregunta2">
+                <div class="col">
+                    <h3>*pregunta de ejemplo 2*</h3>
+                    <input type="text" placeholder="Ingrese su respuesta">
+                    <input type="button" id="respuesta2" value="Enviar respuesta">
+                    <h6>(Y asi sucesivamente)</h6>
+                </div>
+        </div>
+
+
+        </div>
+    </main>
+    <footer></footer>
+</body>
+<script>
+
+function enviar(pregunta){
+    if (pregunta == 1){
+        let respuesta = document.getElementById("respuesta1").value
+        console.log(respuesta)
+        if(respuesta == "Hola"){
+            document.getElementById("pregunta2").style.display = "block"
+
+        }else{
+            alert("Respuesta incorrecta, vuelve a intentarlo")
+        }
+    }
+}
+
+</script>
+</html>

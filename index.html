@@ -3,62 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Escape Room Flores</title>
+    <title>Busqueda del tesoro flores</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-<style>
-    #pregunta2{
-        display:none;
-    }
-</style>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <style>
+        body{background-image: url("https://museobarriodeflores.com.ar/wp-content/uploads/2022/01/20211113_171410-scaled-450x240.jpg");background-repeat: no-repeat;background-size: cover;}
+    </style>
 </head>
 <body>
-    <header></header>
-    <main>
-        <div class="container">
-            <div class="row">
-                <h1>Bienvenido al Escape Room del Barrio de Flores</h1>
-                <h2>¿Estas listo?</h2>
-            </div>
-            <hr>
-            <div class="row" id="pregunta1">
-                    <div class="col">
-                        <h3>*pregunta de ejemplo*</h3>
-                        <input type="text" placeholder="Ingrese su respuesta" id="respuesta1">
-                        <input type="button" onclick="enviar(1)"  value="Enviar respuesta">
-                        <h6>(Ingresar Hola para dar por correcta)</h6>
-                    </div>
-            </div>
-            <hr>
-
-            <div class="row" id="pregunta2">
-                <div class="col">
-                    <h3>*pregunta de ejemplo 2*</h3>
-                    <input type="text" placeholder="Ingrese su respuesta">
-                    <input type="button" id="respuesta2" value="Enviar respuesta">
-                    <h6>(Y asi sucesivamente)</h6>
-                </div>
+    <div class="container" style="color:white; text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;">
+        <div class="row text-center" style="margin-top:15%"> 
+            <img src="https://museobarriodeflores.com.ar/wp-content/uploads/2023/01/cropped-cropped-Museo120.webp" style="width: 10%;margin:0 auto;;" alt="">
+            <h1>Busqueda del tesoro - Flores</h1>
+            <h2>Museo de Barrio de Flores, Ramón Falcon 2207</h2>
+            <h3>30 de Septiembre - 15:30hs</h3>
+            <h3><a href="#">Inscribite acá(formulario)</a></h3>
         </div>
-
-
+        <div class="row text-center">
+            <a href="./juego.html">Ir al juego(oculto hasta el 30/9)</a>
         </div>
-    </main>
-    <footer></footer>
+    </div>
 </body>
-<script>
-
-function enviar(pregunta){
-    if (pregunta == 1){
-        let respuesta = document.getElementById("respuesta1").value
-        console.log(respuesta)
-        if(respuesta == "Hola"){
-            document.getElementById("pregunta2").style.display = "block"
-
-        }else{
-            alert("Respuesta incorrecta, vuelve a intentarlo")
-        }
-    }
-}
-
-</script>
 </html>
