@@ -90,7 +90,7 @@
             <div class="row" id="pregunta5">
                 <hr>
                 <div class="col">
-                    <h5>Hay muchos animales mareados por dar tantas vueltas en círculo, cuáles son?</h5>
+                    <h5>Hay varios ejemplares de un animal salvaje mareaados de tantas vueltas en círculo da.</h5>
                     <input type="text" placeholder="Ingrese su respuesta" id="respuesta5">
                     <input type="button" class="boton-respuesta" onclick="enviar(5)" value="Enviar respuesta">
                 </div>
@@ -101,7 +101,7 @@
             <div class="row" id="pregunta6">
                 <hr>
                 <div class="col">
-                    <h5>el mural te enseña, se apiada  y te lleva a la próxima pista</h5>
+                    <h5>El mural te enseña, se apiada  y te lleva a la próxima pista</h5>
                     <input type="text" placeholder="Ingrese su respuesta" id="respuesta6">
                     <input type="button" class="boton-respuesta" onclick="enviar(6)" value="Enviar respuesta">
                 </div>
@@ -144,9 +144,7 @@
             <div class="row" id="pregunta10">
                 <hr>
                 <div class="col">
-                    <h5>Con mapa y pochoclo en mano, tu próxima pista tendrás
-                        
-</h5>
+                    <h5>Con mapa y pochoclo en mano, tu próxima pista tendrás</h5>
                     <input type="text" placeholder="Ingrese su respuesta" id="respuesta10">
                     <input type="button" class="boton-respuesta" onclick="enviar(10)" value="Enviar respuesta">
                 </div>
@@ -302,7 +300,7 @@
             respuesta = respuesta.toLowerCase()
             respuesta = removeAccents(respuesta)
             console.log(respuesta)
-            if (respuesta == "caballos perros hipopotamos perros"|| respuesta=="Caballos, perros, hipopótamos, perros"|| respuesta =="perros hipopotamos perros caballos"|| respuesta =="hipopotamos perros caballos perros"|| respuesta =="hipopotamos perros caballos perros"|| respuesta =="") {
+            if (respuesta == "hipopotamos" || respuesta=="hipopotamo") {
                 document.getElementById("pregunta6").style.display = "block"
                 audio.play()
             } else {
