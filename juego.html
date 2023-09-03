@@ -16,7 +16,7 @@
 	position:fixed;
 	width:60px;
 	height:60px;
-	bottom:40px;
+    top:80px;
 	right:40px;
 	background-color:#e16bdd;
 	color:#FFF;
@@ -130,7 +130,7 @@
             <div class="row" id="pregunta5">
                 <hr>
                 <div class="col">
-                    <h5>Animales de qué especie están mareados de tantas vueltas en círculo dar? </h5>
+                    <h5>Animales salvajes de qué especie están mareados de tantas vueltas en círculo dar? </h5>
                     <input type="text" class="form-control" placeholder="Ingrese su respuesta" id="respuesta5">
                     <input type="button" class="boton-respuesta" onclick="enviar(5)" value="Enviar respuesta">
                 </div>
@@ -195,7 +195,7 @@
                 <hr>
                 <div class="col">
                     <h5>Tiene nombre de varón pero no entrás a rezar sino, a comprar.
-                        No hace falta entrar de gala, pero a su cielo interno tendrás que mirar tu pista encontrar.
+                        No hace falta entrar de gala, pero a su cielo interno tendrás que mirar para tu pista encontrar.
                         </h5>
                     <input type="text" class="form-control" placeholder="Ingrese su respuesta" id="respuesta11">
                     <input type="button" class="boton-respuesta" onclick="enviar(11)" value="Enviar respuesta">
@@ -674,7 +674,7 @@
             respuesta = respuesta.trim()
             respuesta = removeAccents(respuesta)
             console.log(respuesta)
-            if (respuesta == "museo de flores") {
+            if (respuesta == "museo de flores" || respuesta == "museo barrio de flores") {
                 document.getElementById("pregunta16").style.display = "block"
                 audio.play()
                 Swal.fire({
