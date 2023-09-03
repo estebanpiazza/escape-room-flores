@@ -11,8 +11,35 @@
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
     <style>
-        body{ background-color: #9ae5e5;color:#e16bdd}
-        .boton-respuesta{background-color: #e16bdd;color:#9ae5e5;border-radius: 12px;}
+        .whatsappboton{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#e16bdd;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+.my-float{
+	margin-top:16px;
+}
+        body {
+            background-color: #9ae5e5;
+            color: #e16bdd
+        }
+
+        .boton-respuesta {
+            background-color: #e16bdd;
+            color: #9ae5e5;
+            border-radius: 12px;
+        }
+
         #pregunta2,
         #pregunta3,
         #pregunta4,
@@ -31,6 +58,14 @@
         #pregunta17 {
             display: none;
         }
+
+        .form-control {
+            display: inline;
+            width: 400px;
+        }
+        .boton-respuesta{
+            margin: 10px 0;
+        }
     </style>
 </head>
 
@@ -45,9 +80,8 @@
             <div class="row" id="pregunta1">
                 <hr>
                 <div class="col">
-                    <h5>Bajando en un Falcon llegás a la antigua sede del Museo. Cerca, tenés la pista para avanzar.
-                        Allí cabe la ciudad entera</h5>
-                    <input type="text" placeholder="Ingrese su respuesta" id="respuesta1">
+                    <h5>De la mano de Ramón, vas bajando y llegás a la antigua sede del Museo. Cerca, tenés la pista para avanzar. Allí cabe la  ciudad entera</h5>
+                    <input type="text" class="form-control" placeholder="Ingrese su respuesta" id="respuesta1">
                     <input type="button" class="boton-respuesta" onclick="enviar(1)" value="Enviar respuesta">
                 </div>
                 <hr>
@@ -57,8 +91,8 @@
             <div class="row" id="pregunta2">
                 <hr>
                 <div class="col">
-                    <h5>5 porciones de torta te llevarán a la próxima pista (número) </h5>
-                    <input type="text" placeholder="Ingrese su respuesta" id="respuesta2">
+                    <h5>5 porciones de torta te llevarán a la próxima pista (número)  </h5>
+                    <input type="text" class="form-control" placeholder="Ingrese su respuesta" id="respuesta2">
                     <input type="button" class="boton-respuesta" onclick="enviar(2)" value="Enviar respuesta">
                 </div>
                 <hr>
@@ -69,7 +103,7 @@
                 <hr>
                 <div class="col">
                     <h5>Pasando el mural floreado y cruzando el charco ¿Cuál es la escuela prestigiosa?</h5>
-                    <input type="text" placeholder="Ingrese su respuesta" id="respuesta3">
+                    <input type="text" class="form-control" placeholder="Ingrese su respuesta" id="respuesta3">
                     <input type="button" class="boton-respuesta" onclick="enviar(3)" value="Enviar respuesta">
                 </div>
                 <hr>
@@ -79,8 +113,8 @@
             <div class="row" id="pregunta4">
                 <hr>
                 <div class="col">
-                    <h5>La santa que te cura te lleva a tu próxima pista</h5>
-                    <input type="text" placeholder="Ingrese su respuesta" id="respuesta4">
+                    <h5>Con rostro que no es inteligente, la santa que te cura te sube y te lleva a tu próxima pista</h5>
+                    <input type="text" class="form-control" placeholder="Ingrese su respuesta" id="respuesta4">
                     <input type="button" class="boton-respuesta" onclick="enviar(4)" value="Enviar respuesta">
                 </div>
                 <hr>
@@ -90,8 +124,8 @@
             <div class="row" id="pregunta5">
                 <hr>
                 <div class="col">
-                    <h5>Hay varios ejemplares de un animal salvaje mareaados de tantas vueltas en círculo da.</h5>
-                    <input type="text" placeholder="Ingrese su respuesta" id="respuesta5">
+                    <h5>Animales de qué especie están mareados de tantas vueltas en círculo dar? </h5>
+                    <input type="text" class="form-control" placeholder="Ingrese su respuesta" id="respuesta5">
                     <input type="button" class="boton-respuesta" onclick="enviar(5)" value="Enviar respuesta">
                 </div>
                 <hr>
@@ -101,8 +135,8 @@
             <div class="row" id="pregunta6">
                 <hr>
                 <div class="col">
-                    <h5>El mural te enseña, se apiada  y te lleva a la próxima pista</h5>
-                    <input type="text" placeholder="Ingrese su respuesta" id="respuesta6">
+                    <h5>El mural que  te enseña y se apiada, te lleva a la próxima pista.  Dónde lo encontrarás? </h5>
+                    <input type="text" class="form-control" placeholder="Ingrese su respuesta" id="respuesta6">
                     <input type="button" class="boton-respuesta" onclick="enviar(6)" value="Enviar respuesta">
                 </div>
                 <hr>
@@ -113,7 +147,7 @@
                 <hr>
                 <div class="col">
                     <h5>Notable es que hoy comprás un café y ayer  una aspirina</h5>
-                    <input type="text" placeholder="Ingrese su respuesta" id="respuesta7">
+                    <input type="text" class="form-control" placeholder="Ingrese su respuesta" id="respuesta7">
                     <input type="button" class="boton-respuesta" onclick="enviar(7)" value="Enviar respuesta">
                 </div>
                 <hr>
@@ -121,9 +155,8 @@
             <div class="row" id="pregunta8">
                 <hr>
                 <div class="col">
-                    <h5>Leer el numero  al revés te guiará a la próxima pista 
-                        Bajando la rivera una puerta roja verás y pronto ella se asomará</h5>
-                    <input type="text" placeholder="Ingrese su respuesta" id="respuesta8">
+                    <h5>Leer el número  al revés te guiará a la próxima pista  (cuatro cifras)</h5>
+                    <input type="text" class="form-control" placeholder="Ingrese su respuesta" id="respuesta8">
                     <input type="button" class="boton-respuesta" onclick="enviar(8)" value="Enviar respuesta">
                 </div>
                 <hr>
@@ -133,8 +166,8 @@
             <div class="row" id="pregunta9">
                 <hr>
                 <div class="col">
-                    <h5>Bajando la rivera una puerta roja verás y pronto ella se asomará</h5>
-                    <input type="text" placeholder="Ingrese su respuesta" id="respuesta9">
+                    <h5>Bajando la rivera una puerta roja verás y  en 100 mts, ella se asomará</h5>
+                    <input type="text" class="form-control" placeholder="Ingrese su respuesta" id="respuesta9">
                     <input type="button" class="boton-respuesta" onclick="enviar(9)" value="Enviar respuesta">
                 </div>
                 <hr>
@@ -145,7 +178,7 @@
                 <hr>
                 <div class="col">
                     <h5>Con mapa y pochoclo en mano, tu próxima pista tendrás</h5>
-                    <input type="text" placeholder="Ingrese su respuesta" id="respuesta10">
+                    <input type="text" class="form-control" placeholder="Ingrese su respuesta" id="respuesta10">
                     <input type="button" class="boton-respuesta" onclick="enviar(10)" value="Enviar respuesta">
                 </div>
                 <hr>
@@ -156,8 +189,9 @@
                 <hr>
                 <div class="col">
                     <h5>Tiene nombre de varón pero no entrás a rezar sino, a comprar.
-                        No hace falta entrar de gala, pero al cielo tendrás que mirar  para tu pista encontrar.</h5>
-                    <input type="text" placeholder="Ingrese su respuesta" id="respuesta11">
+                        No hace falta entrar de gala, pero a su cielo interno tendrás que mirar tu pista encontrar.
+                        </h5>
+                    <input type="text" class="form-control" placeholder="Ingrese su respuesta" id="respuesta11">
                     <input type="button" class="boton-respuesta" onclick="enviar(11)" value="Enviar respuesta">
                 </div>
                 <hr>
@@ -167,8 +201,8 @@
             <div class="row" id="pregunta12">
                 <hr>
                 <div class="col">
-                    <h5>⬆️🎈🎈🎈 </h5>
-                    <input type="text" placeholder="Ingrese su respuesta" id="respuesta12">
+                    <h5>🎈🎈🎈 <br>Recuerda: a su cielo interno tendrás que mirar, para tu pista encontrar </h5>
+                    <input type="text" class="form-control" placeholder="Ingrese su respuesta" id="respuesta12">
                     <input type="button" class="boton-respuesta" onclick="enviar(12)" value="Enviar respuesta">
                 </div>
                 <hr>
@@ -178,8 +212,9 @@
             <div class="row" id="pregunta13">
                 <hr>
                 <div class="col">
-                    <h5>Para que la llama que llama te auxilie, te pide que subas una selfie de la próxima pista arrobando al museo 🦙 </h5>
-                    <input type="text" placeholder="Ingrese su respuesta" id="respuesta13">
+                    <h5>No saldrás pero sí bajarás para que la llama que llama te auxilie. A cambio, te pide que subas una selfie de la próxima pista arrobando al museo🦙 @museobarriodeflores
+                    </h5>
+                    <input type="text" class="form-control" placeholder="Ingrese su respuesta" id="respuesta13">
                     <input type="button" class="boton-respuesta" onclick="enviar(13)" value="Enviar respuesta">
                 </div>
                 <hr>
@@ -190,9 +225,9 @@
                 <hr>
                 <div class="col">
                     <h5>🚨💦🔥
-                        
-                        </h5>
-                    <input type="text" placeholder="Ingrese su respuesta" id="respuesta14">
+
+                    </h5>
+                    <input type="text" class="form-control" placeholder="Ingrese su respuesta" id="respuesta14">
                     <input type="button" class="boton-respuesta" onclick="enviar(14)" value="Enviar respuesta">
                 </div>
                 <hr>
@@ -202,9 +237,9 @@
             <div class="row" id="pregunta15">
                 <hr>
                 <div class="col">
-                    <h5>Un anfibio y un pez  te llevan al final que siempre es el inicio
-                        </h5>
-                    <input type="text" placeholder="Ingrese su respuesta" id="respuesta15">
+                    <h5>Un anfibio y un pez te llevan al final que siempre es el inicio
+                    </h5>
+                    <input type="text" class="form-control" placeholder="Ingrese su respuesta" id="respuesta15">
                     <input type="button" class="boton-respuesta" onclick="enviar(15)" value="Enviar respuesta">
                 </div>
                 <hr>
@@ -212,9 +247,8 @@
             <div class="row" id="pregunta16">
                 <hr>
                 <div class="col">
-                    <h5>Si contas hasta 8 al entrar, una  ayuda tendrás. 
-                        Si tiene 4 hojas, estarás cerca de ganar!</h5>
-                    <input type="text" placeholder="Ingrese su respuesta" id="respuesta16">
+                    <h5>Si contas hasta 8  al entrar, ella te  guiará a tu próxima pista</h5>
+                    <input type="text" class="form-control" placeholder="Ingrese su respuesta" id="respuesta16">
                     <input type="button" class="boton-respuesta" onclick="enviar(16)" value="Enviar respuesta">
                 </div>
                 <hr>
@@ -224,15 +258,16 @@
             <div class="row" id="pregunta17">
                 <hr>
                 <div class="col">
-                    <h5>El tren se va
-                        El tren se va. 
-                        Suban ya! 
-                        y los premios obtendrán</h5>
-                     
+                    <h5>Una vez dentro, si tiene cuatro hojas, mucha suerte tendrás y la llave te encontrarás!</h5>
+
                 </div>
                 <hr>
             </div>
-
+            
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+            <a href="http://wa.me/+5491167648220" class="whatsappboton" target="_blank">                
+            <i class="fa fa-lightbulb-o my-float"></i>
+            </a>
 
 
 
@@ -241,6 +276,7 @@
     </main>
     <footer></footer>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script>
     var audio = new Audio('correct.mp3');
 
@@ -250,207 +286,463 @@
         if (pregunta == 1) {
             let respuesta = document.getElementById("respuesta1").value
             respuesta = respuesta.toLowerCase()
+            respuesta = respuesta.trim()
             respuesta = removeAccents(respuesta)
             console.log(respuesta)
-            if (respuesta == "confiteria la buenos aires" || respuesta == "confiteria" || respuesta == "confiteria"|| respuesta =="panaderia"|| respuesta =="pasteleria"|| respuesta =="la buenos aires") {
+            if (respuesta == "confiteria la buenos aires" || respuesta == "confiteria" || respuesta == "confiteria" || respuesta == "panaderia" || respuesta == "pasteleria" || respuesta == "la buenos aires") {
                 document.getElementById("pregunta2").style.display = "block"
                 audio.play()
+                Swal.fire({
+                    title: '¡Correcto!',
+                    text: 'Respuesta correcta. Segui así.',
+                    icon: 'success',
+                    confirmButtonText: '¡Vamos!'
+                })
+
             } else {
-                alert("Ups! Respuesta incorrecta. Intenta nuevamente. ")
+                Swal.fire({
+                    title: '¡Ups!',
+                    text: 'Respuesta incorrecta. Intenta nuevamente.',
+                    icon: 'error',
+                    confirmButtonText: 'ok'
+                })
+
+                
             }
         }
         if (pregunta == 2) {
             let respuesta = document.getElementById("respuesta2").value
             respuesta = respuesta.toLowerCase()
+            respuesta = respuesta.trim()
             respuesta = removeAccents(respuesta)
             console.log(respuesta)
             if (respuesta == "122") {
                 document.getElementById("pregunta3").style.display = "block"
                 audio.play()
+                Swal.fire({
+                    title: '¡Correcto!',
+                    text: 'Respuesta correcta. Segui así.',
+                    icon: 'success',
+                    confirmButtonText: '¡Vamos!'
+                })
+
             } else {
-                alert("Ups! Respuesta incorrecta. Intenta nuevamente. ")
+                Swal.fire({
+                    title: '¡Ups!',
+                    text: 'Respuesta incorrecta. Intenta nuevamente.',
+                    icon: 'error',
+                    confirmButtonText: 'ok'
+                })
+
+              
             }
         }
         if (pregunta == 3) {
             let respuesta = document.getElementById("respuesta3").value
             respuesta = respuesta.toLowerCase()
+            respuesta = respuesta.trim()
             respuesta = removeAccents(respuesta)
             console.log(respuesta)
-            if (respuesta == "republica oriental del uruguay" || respuesta=="escuela primaria"|| respuesta =="rou") {
+            if (respuesta == "republica oriental del uruguay" || respuesta == "escuela primaria" || respuesta == "rou") {
                 document.getElementById("pregunta4").style.display = "block"
                 audio.play()
+                Swal.fire({
+                    title: '¡Correcto!',
+                    text: 'Respuesta correcta. Segui así.',
+                    icon: 'success',
+                    confirmButtonText: '¡Vamos!'
+                })
+
             } else {
-                alert("Ups! Respuesta incorrecta. Intenta nuevamente. ")
+                Swal.fire({
+                    title: '¡Ups!',
+                    text: 'Respuesta incorrecta. Intenta nuevamente.',
+                    icon: 'error',
+                    confirmButtonText: 'ok'
+                })
+
+                
             }
         }
         if (pregunta == 4) {
             let respuesta = document.getElementById("respuesta4").value
             respuesta = respuesta.toLowerCase()
+            respuesta = respuesta.trim()
             respuesta = removeAccents(respuesta)
             console.log(respuesta)
-            if (respuesta == "clinica santa isabel"|| respuesta =="santaisabel") {
+            if (respuesta == "clinica santa isabel" || respuesta == "santa isabel") {
                 document.getElementById("pregunta5").style.display = "block"
                 audio.play()
+                Swal.fire({
+                    title: '¡Correcto!',
+                    text: 'Respuesta correcta. Segui así.',
+                    icon: 'success',
+                    confirmButtonText: '¡Vamos!'
+                })
+
             } else {
-                alert("Ups! Respuesta incorrecta. Intenta nuevamente. ")
+                Swal.fire({
+                    title: '¡Ups!',
+                    text: 'Respuesta incorrecta. Intenta nuevamente.',
+                    icon: 'error',
+                    confirmButtonText: 'ok'
+                })
+
+                
             }
         }
         if (pregunta == 5) {
             let respuesta = document.getElementById("respuesta5").value
             respuesta = respuesta.toLowerCase()
+            respuesta = respuesta.trim()
             respuesta = removeAccents(respuesta)
             console.log(respuesta)
-            if (respuesta == "hipopotamos" || respuesta=="hipopotamo") {
+            if (respuesta == "hipopotamos" || respuesta == "hipopotamo") {
                 document.getElementById("pregunta6").style.display = "block"
                 audio.play()
+                Swal.fire({
+                    title: '¡Correcto!',
+                    text: 'Respuesta correcta. Segui así.',
+                    icon: 'success',
+                    confirmButtonText: '¡Vamos!'
+                })
+
             } else {
-                alert("Ups! Respuesta incorrecta. Intenta nuevamente. ")
+                Swal.fire({
+                    title: '¡Ups!',
+                    text: 'Respuesta incorrecta. Intenta nuevamente.',
+                    icon: 'error',
+                    confirmButtonText: 'ok'
+                })
+
+                
             }
         }
         if (pregunta == 6) {
             let respuesta = document.getElementById("respuesta6").value
             respuesta = respuesta.toLowerCase()
+            respuesta = respuesta.trim()
             respuesta = removeAccents(respuesta)
             console.log(respuesta)
-            if (respuesta == "colegio misericordia"|| respuesta=="escuela"|| respuesta =="escuela misericordia") {
+            if (respuesta == "colegio misericordia" || respuesta == "escuela misericordia") {
                 document.getElementById("pregunta7").style.display = "block"
                 audio.play()
+                Swal.fire({
+                    title: '¡Correcto!',
+                    text: 'Respuesta correcta. Segui así.',
+                    icon: 'success',
+                    confirmButtonText: '¡Vamos!'
+                })
+
+
             } else {
-                alert("Ups! Respuesta incorrecta. Intenta nuevamente. ")
+                Swal.fire({
+                    title: '¡Ups!',
+                    text: 'Respuesta incorrecta. Intenta nuevamente.',
+                    icon: 'error',
+                    confirmButtonText: 'ok'
+                })
+
+                
             }
         }
         if (pregunta == 7) {
             let respuesta = document.getElementById("respuesta7").value
             respuesta = respuesta.toLowerCase()
+            respuesta = respuesta.trim()
             respuesta = removeAccents(respuesta)
             console.log(respuesta)
-            if (respuesta == "la farmacia"|| respuesta=="cafe la farmacia" || respuesta=="bar la farmacia") {
+            if (respuesta == "la farmacia" || respuesta == "cafe la farmacia" || respuesta == "bar la farmacia") {
                 document.getElementById("pregunta8").style.display = "block"
                 audio.play()
+                Swal.fire({
+                    title: '¡Correcto!',
+                    text: 'Respuesta correcta. Segui así.',
+                    icon: 'success',
+                    confirmButtonText: '¡Vamos!'
+                })
+
             } else {
-                alert("Ups! Respuesta incorrecta. Intenta nuevamente. ")
+                Swal.fire({
+                    title: '¡Ups!',
+                    text: 'Respuesta incorrecta. Intenta nuevamente.',
+                    icon: 'error',
+                    confirmButtonText: 'ok'
+                })
+
+                
             }
         }
         if (pregunta == 8) {
             let respuesta = document.getElementById("respuesta8").value
             respuesta = respuesta.toLowerCase()
+            respuesta = respuesta.trim()
             respuesta = removeAccents(respuesta)
             console.log(respuesta)
-            if (respuesta == "8932") {
+            if (respuesta == "0042") {
                 document.getElementById("pregunta9").style.display = "block"
                 audio.play()
+                Swal.fire({
+                    title: '¡Correcto!',
+                    text: 'Respuesta correcta. Segui así.',
+                    icon: 'success',
+                    confirmButtonText: '¡Vamos!'
+                })
+
             } else {
-                alert("Ups! Respuesta incorrecta. Intenta nuevamente. ")
+                Swal.fire({
+                    title: '¡Ups!',
+                    text: 'Respuesta incorrecta. Intenta nuevamente.',
+                    icon: 'error',
+                    confirmButtonText: 'ok'
+                })
+
+                
             }
         }
         if (pregunta == 9) {
             let respuesta = document.getElementById("respuesta9").value
             respuesta = respuesta.toLowerCase()
+            respuesta = respuesta.trim()
             respuesta = removeAccents(respuesta)
             console.log(respuesta)
-            if (respuesta == "basilica san jose de flores"|| respuesta=="cupula"|| respuesta=="cupula san jose de flores"|| respuesta =="iglesia") {
+            if (respuesta == "basilica san jose de flores" || respuesta == "cupula" || respuesta == "cupula san jose de flores" || respuesta == "iglesia") {
                 document.getElementById("pregunta10").style.display = "block"
                 audio.play()
+                Swal.fire({
+                    title: '¡Correcto!',
+                    text: 'Respuesta correcta. Segui así.',
+                    icon: 'success',
+                    confirmButtonText: '¡Vamos!'
+                })
+
             } else {
-                alert("Ups! Respuesta incorrecta. Intenta nuevamente. ")
+                Swal.fire({
+                    title: '¡Ups!',
+                    text: 'Respuesta incorrecta. Intenta nuevamente.',
+                    icon: 'error',
+                    confirmButtonText: 'ok'
+                })
+
+                
             }
         }
         if (pregunta == 10) {
             let respuesta = document.getElementById("respuesta10").value
             respuesta = respuesta.toLowerCase()
+            respuesta = respuesta.trim()
             respuesta = removeAccents(respuesta)
             console.log(respuesta)
-            if (respuesta == "cine atlas"|| respuesta=="atlas"|| respuesta=="cine atlas rivera indarte") {
+            if (respuesta == "cine atlas" || respuesta == "atlas" || respuesta == "cine atlas rivera indarte") {
                 document.getElementById("pregunta11").style.display = "block"
                 audio.play()
+                Swal.fire({
+                    title: '¡Correcto!',
+                    text: 'Respuesta correcta. Segui así.',
+                    icon: 'success',
+                    confirmButtonText: '¡Vamos!'
+                })
+
             } else {
-                alert("Ups! Respuesta incorrecta. Intenta nuevamente. ")
+                Swal.fire({
+                    title: '¡Ups!',
+                    text: 'Respuesta incorrecta. Intenta nuevamente.',
+                    icon: 'error',
+                    confirmButtonText: 'ok'
+                })
+
+                
             }
         }
         if (pregunta == 11) {
             let respuesta = document.getElementById("respuesta11").value
             respuesta = respuesta.toLowerCase()
+            respuesta = respuesta.trim()
             respuesta = removeAccents(respuesta)
             console.log(respuesta)
             if (respuesta == "galeria san jose") {
                 document.getElementById("pregunta12").style.display = "block"
                 audio.play()
+                Swal.fire({
+                    title: '¡Correcto!',
+                    text: 'Respuesta correcta. Segui así.',
+                    icon: 'success',
+                    confirmButtonText: '¡Vamos!'
+                })
+
             } else {
-                alert("Ups! Respuesta incorrecta. Intenta nuevamente. ")
+                Swal.fire({
+                    title: '¡Ups!',
+                    text: 'Respuesta incorrecta. Intenta nuevamente.',
+                    icon: 'error',
+                    confirmButtonText: 'ok'
+                })
+
+                
             }
         }
         if (pregunta == 12) {
             let respuesta = document.getElementById("respuesta12").value
             respuesta = respuesta.toLowerCase()
+            respuesta = respuesta.trim()
             respuesta = removeAccents(respuesta)
             console.log(respuesta)
-            if (respuesta == "policastro"|| respuesta =="mural policastro") {
+            if (respuesta == "policastro" || respuesta == "mural policastro") {
                 document.getElementById("pregunta13").style.display = "block"
                 audio.play()
+                Swal.fire({
+                    title: '¡Correcto!',
+                    text: 'Respuesta correcta. Segui así.',
+                    icon: 'success',
+                    confirmButtonText: '¡Vamos!'
+                })
+
             } else {
-                alert("Ups! Respuesta incorrecta. Intenta nuevamente. ")
+                Swal.fire({
+                    title: '¡Ups!',
+                    text: 'Respuesta incorrecta. Intenta nuevamente.',
+                    icon: 'error',
+                    confirmButtonText: 'ok'
+                })
+
+                
             }
         }
         if (pregunta == 13) {
             let respuesta = document.getElementById("respuesta13").value
             respuesta = respuesta.toLowerCase()
+            respuesta = respuesta.trim()
             respuesta = removeAccents(respuesta)
             console.log(respuesta)
-            if (respuesta == "telefono publico"|| respuesta =="telefonica") {
+            if (respuesta == "telefono publico" || respuesta == "telefonica") {
                 document.getElementById("pregunta14").style.display = "block"
                 audio.play()
+                Swal.fire({
+                    title: '¡Correcto!',
+                    text: 'Respuesta correcta. Segui así.',
+                    icon: 'success',
+                    confirmButtonText: '¡Vamos!'
+                })
+
             } else {
-                alert("Ups! Respuesta incorrecta. Intenta nuevamente. ")
+                Swal.fire({
+                    title: '¡Ups!',
+                    text: 'Respuesta incorrecta. Intenta nuevamente.',
+                    icon: 'error',
+                    confirmButtonText: 'ok'
+                })
+
+                
             }
         }
         if (pregunta == 14) {
             let respuesta = document.getElementById("respuesta14").value
             respuesta = respuesta.toLowerCase()
+            respuesta = respuesta.trim()
             respuesta = removeAccents(respuesta)
             console.log(respuesta)
-            if (respuesta == "estacion de bomberos"|| respuesta=="bomberos") {
+            if (respuesta == "estacion de bomberos" || respuesta == "bomberos") {
                 document.getElementById("pregunta15").style.display = "block"
                 audio.play()
+                Swal.fire({
+                    title: '¡Correcto!',
+                    text: 'Respuesta correcta. Segui así.',
+                    icon: 'success',
+                    confirmButtonText: '¡Vamos!'
+                })
+
             } else {
-                alert("Ups! Respuesta incorrecta. Intenta nuevamente. ")
+                Swal.fire({
+                    title: '¡Ups!',
+                    text: 'Respuesta incorrecta. Intenta nuevamente.',
+                    icon: 'error',
+                    confirmButtonText: 'ok'
+                })
+
+                
             }
         }
         if (pregunta == 15) {
             let respuesta = document.getElementById("respuesta15").value
             respuesta = respuesta.toLowerCase()
+            respuesta = respuesta.trim()
             respuesta = removeAccents(respuesta)
             console.log(respuesta)
             if (respuesta == "museo de flores") {
                 document.getElementById("pregunta16").style.display = "block"
                 audio.play()
+                Swal.fire({
+                    title: '¡Correcto!',
+                    text: 'Respuesta correcta. Segui así.',
+                    icon: 'success',
+                    confirmButtonText: '¡Vamos!'
+                })
+
             } else {
-                alert("Ups! Respuesta incorrecta. Intenta nuevamente. ")
+                Swal.fire({
+                    title: '¡Ups!',
+                    text: 'Respuesta incorrecta. Intenta nuevamente.',
+                    icon: 'error',
+                    confirmButtonText: 'ok'
+                })
+
+                
             }
         }
         if (pregunta == 16) {
             let respuesta = document.getElementById("respuesta16").value
             respuesta = respuesta.toLowerCase()
+            respuesta = respuesta.trim()
             respuesta = removeAccents(respuesta)
             console.log(respuesta)
             if (respuesta == "alfonsina storni") {
                 document.getElementById("pregunta17").style.display = "block"
                 audio.play()
+                Swal.fire({
+                    title: '¡Correcto!',
+                    text: 'Respuesta correcta. Segui así.',
+                    icon: 'success',
+                    confirmButtonText: '¡Vamos!'
+                })
+
             } else {
-                alert("Ups! Respuesta incorrecta. Intenta nuevamente. ")
+                Swal.fire({
+                    title: '¡Ups!',
+                    text: 'Respuesta incorrecta. Intenta nuevamente.',
+                    icon: 'error',
+                    confirmButtonText: 'ok'
+                })
+
+                
             }
         }
-        if (pregunta == 17) {
+/*         if (pregunta == 17) {
             let respuesta = document.getElementById("respuesta17").value
             respuesta = respuesta.toLowerCase()
+            respuesta = respuesta.trim()
             respuesta = removeAccents(respuesta)
             console.log(respuesta)
             if (respuesta == "") {
                 document.getElementById("pregunta18").style.display = "block"
                 audio.play()
+                Swal.fire({
+                    title: '¡Correcto!',
+                    text: 'Respuesta correcta. Segui así.',
+                    icon: 'success',
+                    confirmButtonText: '¡Vamos!'
+                })
+
             } else {
-                alert("Ups! Respuesta incorrecta. Intenta nuevamente. ")
+                Swal.fire({
+                    title: '¡Ups!',
+                    text: 'Respuesta incorrecta. Intenta nuevamente.',
+                    icon: 'error',
+                    confirmButtonText: 'ok'
+                })
+
+                
             }
-        }
+        } */
 
     }
 
