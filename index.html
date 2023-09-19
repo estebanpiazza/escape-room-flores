@@ -11,40 +11,71 @@
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
     <style>
+        #div-central {
+            background-color: lightgray;
+            margin-top: 20vh;
+
+        }
 
         body {
-    background:url(/flyer.jpg) no-repeat center center fixed; ;
-     
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size:cover;
+            background: url(/flyer.png) no-repeat center center fixed;
+            ;
+            height: 90vh;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
 
-}
-.boton-respuesta {
+        }
+
+        .boton-respuesta {
             background-color: #e16bdd;
             color: #9ae5e5;
             border-radius: 12px;
+        }
+
+        #logo {
+            width: 20vw;
+            margin: 20px auto;
+        }
+
+        #boton-jugar {
+            margin: 20px;
+            font-size: 30px;
+        }
+
+        @media only screen and (max-width : 900px) {
+            #logo {
+                width: 30vw;
+            }
+
+            #div-central {
+                margin-top: 30vh;
+            }
         }
     </style>
 </head>
 
 <body>
-    <div class="container" style="color:black;;background-color: rgb(235, 234, 234);">
-        <div class="row text-center" style="margin-top:15%; ">
-            <img src="https://museobarriodeflores.com.ar/wp-content/uploads/2023/01/cropped-cropped-Museo120.webp"
-                style="width: 10%;margin:0 auto;;" alt="">
+    <div class="row text-center">
+        <div id="div-central">
+            <img id="logo"
+                src="https://museobarriodeflores.com.ar/wp-content/uploads/2023/01/cropped-cropped-Museo120.webp"
+                alt="">
             <h1>Búsqueda del tesoro - Flores</h1>
             <h2>Museo de Barrio de Flores, Ramón Falcon 2207</h2>
             <!-- <h5><a href="#">Inscribite acá</a></h5> -->
             <div class="row text-center">
-                <a href="./juego.html"><button class="boton-respuesta" style="margin: 10px 0;padding:10px">¡A jugar!</button></a>
+                <a href="./juego.html"><button class="boton-respuesta" id="boton-jugar">¡A
+                        jugar!</button></a>
             </div>
         </div>
-        
+
+
     </div>
 </body>
 <script>
 
 </script>
+
 </html>
