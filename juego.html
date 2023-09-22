@@ -266,21 +266,36 @@ right: 20px;
                 </div>
                 <hr>
             </div>
-            
-<!--             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-            <a href="http://wa.me/+5491167648220" class="whatsappboton" target="_blank">                
-            <i class="fa fa-lightbulb-o my-float"></i>
-            </a> -->
-
-
-
-
         </div>
     </main>
     <footer></footer>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script>
+
+window.onload = function cargarRespuestas(){
+    document.getElementById("respuesta1").value = localStorage.getItem("respuestaGuardada1")
+    document.getElementById("respuesta2").value = localStorage.getItem("respuestaGuardada2")
+    document.getElementById("respuesta3").value = localStorage.getItem("respuestaGuardada3")
+    document.getElementById("respuesta4").value = localStorage.getItem("respuestaGuardada4")
+    document.getElementById("respuesta5").value = localStorage.getItem("respuestaGuardada5")
+    document.getElementById("respuesta6").value = localStorage.getItem("respuestaGuardada6")
+    document.getElementById("respuesta7").value = localStorage.getItem("respuestaGuardada7")
+    document.getElementById("respuesta8").value = localStorage.getItem("respuestaGuardada8")
+    document.getElementById("respuesta9").value = localStorage.getItem("respuestaGuardada9")
+    document.getElementById("respuesta10").value = localStorage.getItem("respuestaGuardada10")
+    document.getElementById("respuesta11").value = localStorage.getItem("respuestaGuardada11")
+    document.getElementById("respuesta12").value = localStorage.getItem("respuestaGuardada12")
+    document.getElementById("respuesta13").value = localStorage.getItem("respuestaGuardada13")
+    document.getElementById("respuesta14").value = localStorage.getItem("respuestaGuardada14")
+    document.getElementById("respuesta15").value = localStorage.getItem("respuestaGuardada15")
+    document.getElementById("respuesta16").value = localStorage.getItem("respuestaGuardada16")
+    document.getElementById("respuesta17").value = localStorage.getItem("respuestaGuardada17")
+
+}
+
+
+
     var audio = new Audio('correct.mp3');
 
     function enviar(pregunta) {
@@ -288,6 +303,7 @@ right: 20px;
 
         if (pregunta == 1) {
             let respuesta = document.getElementById("respuesta1").value
+            localStorage.setItem("respuestaGuardada1",respuesta)
             respuesta = respuesta.toLowerCase()
             respuesta = respuesta.trim()
             respuesta = removeAccents(respuesta)
@@ -315,6 +331,7 @@ right: 20px;
         }
         if (pregunta == 2) {
             let respuesta = document.getElementById("respuesta2").value
+            localStorage.setItem("respuestaGuardada2",respuesta)
             respuesta = respuesta.toLowerCase()
             respuesta = respuesta.trim()
             respuesta = removeAccents(respuesta)
@@ -342,6 +359,7 @@ right: 20px;
         }
         if (pregunta == 3) {
             let respuesta = document.getElementById("respuesta3").value
+            localStorage.setItem("respuestaGuardada3",respuesta)
             respuesta = respuesta.toLowerCase()
             respuesta = respuesta.trim()
             respuesta = removeAccents(respuesta)
@@ -369,6 +387,7 @@ right: 20px;
         }
         if (pregunta == 4) {
             let respuesta = document.getElementById("respuesta4").value
+            localStorage.setItem("respuestaGuardada4",respuesta)
             respuesta = respuesta.toLowerCase()
             respuesta = respuesta.trim()
             respuesta = removeAccents(respuesta)
@@ -396,6 +415,7 @@ right: 20px;
         }
         if (pregunta == 5) {
             let respuesta = document.getElementById("respuesta5").value
+            localStorage.setItem("respuestaGuardada5",respuesta)
             respuesta = respuesta.toLowerCase()
             respuesta = respuesta.trim()
             respuesta = removeAccents(respuesta)
@@ -423,6 +443,7 @@ right: 20px;
         }
         if (pregunta == 6) {
             let respuesta = document.getElementById("respuesta6").value
+            localStorage.setItem("respuestaGuardada6",respuesta)
             respuesta = respuesta.toLowerCase()
             respuesta = respuesta.trim()
             respuesta = removeAccents(respuesta)
@@ -451,6 +472,7 @@ right: 20px;
         }
         if (pregunta == 7) {
             let respuesta = document.getElementById("respuesta7").value
+            localStorage.setItem("respuestaGuardada7",respuesta)
             respuesta = respuesta.toLowerCase()
             respuesta = respuesta.trim()
             respuesta = removeAccents(respuesta)
@@ -478,6 +500,7 @@ right: 20px;
         }
         if (pregunta == 8) {
             let respuesta = document.getElementById("respuesta8").value
+            localStorage.setItem("respuestaGuardada8",respuesta)
             respuesta = respuesta.toLowerCase()
             respuesta = respuesta.trim()
             respuesta = removeAccents(respuesta)
@@ -505,6 +528,7 @@ right: 20px;
         }
         if (pregunta == 9) {
             let respuesta = document.getElementById("respuesta9").value
+            localStorage.setItem("respuestaGuardada9",respuesta)
             respuesta = respuesta.toLowerCase()
             respuesta = respuesta.trim()
             respuesta = removeAccents(respuesta)
@@ -532,6 +556,7 @@ right: 20px;
         }
         if (pregunta == 10) {
             let respuesta = document.getElementById("respuesta10").value
+            localStorage.setItem("respuestaGuardada10",respuesta)
             respuesta = respuesta.toLowerCase()
             respuesta = respuesta.trim()
             respuesta = removeAccents(respuesta)
@@ -559,6 +584,7 @@ right: 20px;
         }
         if (pregunta == 11) {
             let respuesta = document.getElementById("respuesta11").value
+            localStorage.setItem("respuestaGuardada11",respuesta)
             respuesta = respuesta.toLowerCase()
             respuesta = respuesta.trim()
             respuesta = removeAccents(respuesta)
@@ -586,6 +612,7 @@ right: 20px;
         }
         if (pregunta == 12) {
             let respuesta = document.getElementById("respuesta12").value
+            localStorage.setItem("respuestaGuardada12",respuesta)
             respuesta = respuesta.toLowerCase()
             respuesta = respuesta.trim()
             respuesta = removeAccents(respuesta)
@@ -613,6 +640,7 @@ right: 20px;
         }
         if (pregunta == 13) {
             let respuesta = document.getElementById("respuesta13").value
+            localStorage.setItem("respuestaGuardada13",respuesta)
             respuesta = respuesta.toLowerCase()
             respuesta = respuesta.trim()
             respuesta = removeAccents(respuesta)
@@ -640,6 +668,7 @@ right: 20px;
         }
         if (pregunta == 14) {
             let respuesta = document.getElementById("respuesta14").value
+            localStorage.setItem("respuestaGuardada14",respuesta)
             respuesta = respuesta.toLowerCase()
             respuesta = respuesta.trim()
             respuesta = removeAccents(respuesta)
@@ -667,6 +696,7 @@ right: 20px;
         }
         if (pregunta == 15) {
             let respuesta = document.getElementById("respuesta15").value
+            localStorage.setItem("respuestaGuardada15",respuesta)
             respuesta = respuesta.toLowerCase()
             respuesta = respuesta.trim()
             respuesta = removeAccents(respuesta)
@@ -694,6 +724,7 @@ right: 20px;
         }
         if (pregunta == 16) {
             let respuesta = document.getElementById("respuesta16").value
+            localStorage.setItem("respuestaGuardada16",respuesta)
             respuesta = respuesta.toLowerCase()
             respuesta = respuesta.trim()
             respuesta = removeAccents(respuesta)
@@ -721,6 +752,7 @@ right: 20px;
         }
 /*         if (pregunta == 17) {
             let respuesta = document.getElementById("respuesta17").value
+            localStorage.setItem("respuestaGuardada17",respuesta)
             respuesta = respuesta.toLowerCase()
             respuesta = respuesta.trim()
             respuesta = removeAccents(respuesta)
@@ -750,5 +782,4 @@ right: 20px;
     }
 
 </script>
-<script src="localstorage.js"></script>
 </html>
